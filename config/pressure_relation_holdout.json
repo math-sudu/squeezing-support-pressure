@@ -1,0 +1,56 @@
+{
+  "conditions": [
+    {
+      "id": "blind_id_36_0175",
+      "split": "blind_interpolation",
+      "young_over_p0": 36,
+      "strength_intercept_over_p0": 0.175
+    },
+    {
+      "id": "blind_id_36_0225",
+      "split": "blind_interpolation",
+      "young_over_p0": 36,
+      "strength_intercept_over_p0": 0.225
+    },
+    {
+      "id": "blind_id_44_0175",
+      "split": "blind_interpolation",
+      "young_over_p0": 44,
+      "strength_intercept_over_p0": 0.175
+    },
+    {
+      "id": "blind_id_44_0225",
+      "split": "blind_interpolation",
+      "young_over_p0": 44,
+      "strength_intercept_over_p0": 0.225
+    }
+  ],
+  "allowables": [
+    0.015,
+    0.02,
+    0.025
+  ],
+  "frozen_repeats": [
+    {
+      "seed": 1729,
+      "result_ref": "runs/pressure_remediation_01/seed_1729/result.json",
+      "sha256": "d1c4fb36b62a27d563bbaec26dc6d68347ab25422263551f5572cbc24b3bc37e",
+      "expression": "1-C*(a0+a1*E_over_p0+a2*k_over_p0+a3*sqrt(C)+a4*C*E_over_p0)",
+      "status": "optimal_independently_verified"
+    },
+    {
+      "seed": 2718,
+      "result_ref": "runs/pressure_remediation_01/seed_2718/result.json",
+      "sha256": "81bc5ba90db189ed5c1d638e948789fb7b3b335b53f421c4911f4cda480b00c6",
+      "expression": "1-C*(a0+a1*sqrt(C)+E_over_p0*(a2+a3*k_over_p0+a4*C))",
+      "status": "optimal_independently_verified"
+    },
+    {
+      "seed": 3141,
+      "result_ref": "runs/pressure_remediation_01/seed_3141/result.json",
+      "sha256": "d44960b771b8dee026740e8f4e81670c8beb6bb924055327216ad4f83ace86b9",
+      "expression": "1-C*(a0+a1*E_over_p0+a2*k_over_p0+a3*C+a4*square(C*E_over_p0))",
+      "status": "optimal_independently_verified"
+    }
+  ]
+}

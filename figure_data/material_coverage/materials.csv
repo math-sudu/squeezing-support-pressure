@@ -1,0 +1,14 @@
+condition,split,E,k
+fit_32_015,fit,32,0.15
+fit_32_025,fit,32,0.25
+fit_48_015,fit,48,0.15
+fit_48_025,fit,48,0.25
+fit_40_020,fit,40,0.2
+select_32_020,selection,32,0.2
+select_40_015,selection,40,0.15
+select_40_025,selection,40,0.25
+select_48_020,selection,48,0.2
+blind_id_36_0175,blind_interpolation,36,0.175
+blind_id_36_0225,blind_interpolation,36,0.225
+blind_id_44_0175,blind_interpolation,44,0.175
+blind_id_44_0225,blind_interpolation,44,0.225

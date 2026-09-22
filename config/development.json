@@ -1,0 +1,13 @@
+{
+  "development_runs": {
+    "fit_40_020": "runs/first_feasibility_02",
+    "fit_32_015": "runs/fitting_pilot_01/fit_32_015",
+    "fit_32_025": "runs/fitting_pilot_01/fit_32_025",
+    "fit_48_015": "runs/development_completion_01/fit_48_015",
+    "fit_48_025": "runs/development_completion_01/fit_48_025",
+    "select_32_020": "runs/material_pilot_01/select_32_020",
+    "select_40_015": "runs/material_pilot_01/select_40_015",
+    "select_40_025": "runs/development_completion_01/select_40_025",
+    "select_48_020": "runs/development_completion_01/select_48_020"
+  }
+}

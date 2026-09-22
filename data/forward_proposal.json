@@ -1,0 +1,25 @@
+{
+  "provenance": {
+    "route": "Primary Codex assistant in the author's revision continuation",
+    "model_family": "GPT-6",
+    "generation_context": "The project revision guidance, incoming fixed-Cp tangent, plastic stress partials, threshold expansion, complete exponential material return, and four already observed locally repaired intervals.",
+    "selection": "The coupled relation and regional span were implemented before their numerical evaluation in this task. The deployable frozen-basis form was then constructed to remove global operator assembly from repeated queries.",
+    "evidence_role": "Construction and diagnosis; all four PINN intervals were already observed. No prospective validation is claimed."
+  },
+  "name": "Regional loading modes with finite-return plastic feedback",
+  "expressions": {
+    "coupled_increment": "K_n,h d + B_n [Cp_return(F_n + grad d; Cp_n,kappa_n)-Cp_n] = h f_n",
+    "hinge_option": "delta_Cp = Q_n relu(dPhi_n : grad d - margin_n) / D_n",
+    "pressure_mode": "v_load = solve(K_n,h, f_n)",
+    "plastic_mode": "v_region = -solve(K_n,h, B_n[indicator_region * delta_Cp(h*v_load)])",
+    "basis": "V = orth([v_load, v_region for each region with nonzero plastic forcing])",
+    "reduced_step": "(V^T K_n,h V) b + V^T B_n delta_Cp(V b) = h V^T f_n",
+    "state_update": "a_next=a+b; Cp_next,kappa_next=return(F_ref+grad(V)*a_next;Cp,kappa); pressure_next=pressure-h",
+    "outputs": "C_next from exact predicted chord lengths; z_next from fixed reference tensor kernels"
+  },
+  "mechanical_coefficients": "K_el and B are fixed-Cp and fixed-F stress partials at the known reference state. Follower pressure coefficients retain the requested pressure and current wall deformation. No endpoint regression coefficients are fitted.",
+  "state_choice": "Retain material-point Cp and kappa, so spatial margins and directions remain available; reduce displacement to three amplitudes. The eight tensor moments remain outputs, not a sufficient Markov state.",
+  "residual_policy": "Preserve the incoming weak residual in the main increment relation. Compute the linear response to -R_n separately as a sensitivity. Never use a target endpoint residual as a predictor input.",
+  "deployment": "reduced_model.npz freezes the three modes, stress partials and incoming field at pressure ratio 0.7000, with regional forcing constructed for h=0.0125. The online implementation reads only this artifact and its own advanced state.",
+  "evaluated_domain": "Current e=40,s=0.20 monotone unloading path. Four one-step diagnostics; direct and two-half-step predictions from the common 0.7000 state. Original pressure formulas and frozen affine closure remain unchanged."
+}

@@ -1,0 +1,2680 @@
+{
+  "question": "Does the critical height reserve retain its sign under full plastic-history and spatial refinement at the unchanged predicted pressure?",
+  "source": "runs/pressure_remediation_fe_01/attempts.json",
+  "source_call_index": 30,
+  "config": {
+    "schema_version": 1,
+    "device": "cuda:0",
+    "dtype": "float64",
+    "geometry": "config/tangent_arcs.json",
+    "p0": 1.0,
+    "stress_units": "p0 (synthetic verification); coordinates and displacement in metres",
+    "material": {
+      "young": 48.0,
+      "poisson": 0.25,
+      "alpha": 0.8,
+      "beta": 0.2,
+      "k0": 0.15,
+      "hardening": 1.0
+    },
+    "outer_widths": 8.0,
+    "reference_mesh": {
+      "angular": 192,
+      "radial": 48,
+      "quadrature": 4,
+      "degree": 2
+    },
+    "reference": {
+      "newton_tolerance": 1e-09,
+      "newton_iterations": 18,
+      "tangent_difference": 2e-06,
+      "linear_solver": "bicgstab"
+    }
+  },
+  "elastic_start": {
+    "solver": {
+      "pressure_ratio": 0.775,
+      "residual_max": 2.1737901850703135e-14,
+      "j_min": 0.9712213244203515,
+      "yield_max": -0.04683565415339927,
+      "plastic_volume_max": 0.0,
+      "kappa_max": 0.0,
+      "delta_lambda_max": 0.0,
+      "cumulative_plastic_area_m2": 0.0,
+      "active_plastic_area_m2": 0.0,
+      "residual_history": [
+        0.1306955250933199,
+        0.0022937657465682574,
+        2.157797188524915e-07,
+        2.1742106125368262e-14
+      ],
+      "linear_solver": "bicgstab",
+      "linear_solve_history": [
+        {
+          "iterations": 1468,
+          "relative_residual": 8.748104402214166e-11,
+          "restarts": 0
+        },
+        {
+          "iterations": 1723,
+          "relative_residual": 3.1602194320701464e-11,
+          "restarts": 0
+        },
+        {
+          "iterations": 1449,
+          "relative_residual": 8.498193730431888e-11,
+          "restarts": 0
+        }
+      ],
+      "wall_self_intersections": 0,
+      "wall_polygon_area_m2": 120.01690248302964,
+      "wall_min_segment_m": 0.09246734183200628,
+      "accepted": true
+    },
+    "observation": {
+      "width_closure": 0.004530565808978704,
+      "height_closure": 0.007898738738943534,
+      "width_closure_mm": 60.98141578885336,
+      "height_closure_mm": 87.28106306532604,
+      "initial_width_m": 13.460000000000003,
+      "initial_height_m": 11.049999999999999
+    },
+    "checkpoint": "runs/critical_clearance/elastic_192x48.pt",
+    "material_points": 150528,
+    "free_displacement_dofs": 75264,
+    "actual_angular_divisions": 196,
+    "original_start_comparison": {
+      "checkpoint": "runs/development_completion_01/fit_48_015/accepted_010.pt",
+      "u_max_absolute_difference_m": 3.264003650693681e-13,
+      "cp_max_absolute_difference": 0.0,
+      "kappa_max_absolute_difference": 0.0,
+      "chord_difference_mm": {
+        "width": 5.00605779052421e-10,
+        "height": 5.312017492542509e-10
+      },
+      "preceding_saved_states_all_elastic": true
+    }
+  },
+  "target_pressure_ratio": 0.35387620364056893,
+  "allowable": 0.025,
+  "original_observation": {
+    "width_closure": 0.015346236770190647,
+    "height_closure": 0.02499105853280037,
+    "width_closure_mm": 206.56034692676613,
+    "height_closure_mm": 276.15119678744406,
+    "initial_width_m": 13.460000000000003,
+    "initial_height_m": 11.049999999999999,
+    "chord_endpoints_m": {
+      "initial": [
+        [
+          6.730000000000001,
+          0.0
+        ],
+        [
+          -6.730000000000001,
+          8.241872958261688e-16
+        ],
+        [
+          4.120936479130844e-16,
+          6.730000000000001
+        ],
+        [
+          -2.975891721928068e-15,
+          -4.319999999999998
+        ]
+      ],
+      "deformed": [
+        [
+          6.626719826536618,
+          -0.004682931045336868
+        ],
+        [
+          -6.626719826536618,
+          -0.0046829310453360366
+        ],
+        [
+          3.836172960227472e-16,
+          6.602536806043566
+        ],
+        [
+          -3.01692005413264e-15,
+          -4.1713119971689885
+        ]
+      ],
+      "width_indices": [
+        0,
+        1
+      ],
+      "height_indices": [
+        2,
+        3
+      ]
+    }
+  },
+  "original_margins": {
+    "allowable": 0.025,
+    "actual_max_closure": 0.02499105853280037,
+    "signed_max_closure_mismatch": -8.94146719963157e-06,
+    "positive_overshoot": 0.0,
+    "raw_positive_mismatch": false,
+    "controlling_chord": "height",
+    "width_signed_margin": 0.009653763229809355,
+    "width_signed_overshoot_mm": -129.93965307323393,
+    "height_signed_margin": 8.94146719963157e-06,
+    "height_signed_overshoot_mm": -0.09880321255592885
+  },
+  "original_pressure_nodes": [
+    0.775,
+    0.75,
+    0.725,
+    0.7,
+    0.675,
+    0.65,
+    0.625,
+    0.6,
+    0.575,
+    0.55,
+    0.525,
+    0.5,
+    0.475,
+    0.45,
+    0.425,
+    0.4,
+    0.375,
+    0.35387620364056893
+  ],
+  "subdivisions": 2,
+  "pressures": [
+    0.7625,
+    0.75,
+    0.7375,
+    0.725,
+    0.7124999999999999,
+    0.7,
+    0.6875,
+    0.675,
+    0.6625000000000001,
+    0.65,
+    0.6375,
+    0.625,
+    0.6125,
+    0.6,
+    0.5874999999999999,
+    0.575,
+    0.5625,
+    0.55,
+    0.5375000000000001,
+    0.525,
+    0.5125,
+    0.5,
+    0.4875,
+    0.475,
+    0.4625,
+    0.45,
+    0.4375,
+    0.425,
+    0.4125,
+    0.4,
+    0.3875,
+    0.375,
+    0.36443810182028447,
+    0.35387620364056893
+  ],
+  "status": "completed",
+  "steps": [
+    {
+      "solver": {
+        "pressure_ratio": 0.7625,
+        "residual_max": 2.0808172128955026e-12,
+        "j_min": 0.9710134286925857,
+        "yield_max": -0.02207737676262231,
+        "plastic_volume_max": 0.0,
+        "kappa_max": 0.0,
+        "delta_lambda_max": 0.0,
+        "cumulative_plastic_area_m2": 0.0,
+        "active_plastic_area_m2": 0.0,
+        "residual_history": [
+          0.007246216603430694,
+          7.113415199488421e-06,
+          2.080786395561445e-12
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1548,
+            "relative_residual": 9.899959530992872e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1502,
+            "relative_residual": 8.100156924096635e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.9371307260596,
+        "wall_min_segment_m": 0.0924253302653928,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.004780126842473087,
+        "height_closure": 0.008336618110933669,
+        "width_closure_mm": 64.34050729968777,
+        "height_closure_mm": 92.11963012581703,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.008336618110933669,
+        "signed_max_closure_mismatch": -0.016663381889066332,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.020219873157526914,
+        "width_signed_overshoot_mm": -272.1594927003123,
+        "height_signed_margin": 0.016663381889066332,
+        "height_signed_overshoot_mm": -184.13036987418297
+      },
+      "wall_seconds": 16.09500349999871
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.75,
+        "residual_max": 1.9373090611051332e-14,
+        "j_min": 0.9708130891968575,
+        "yield_max": 2.227493363371469e-16,
+        "plastic_volume_max": 5.294260852200389e-16,
+        "kappa_max": 5.68879986662378e-05,
+        "delta_lambda_max": 5.68879986662378e-05,
+        "cumulative_plastic_area_m2": 0.008225131943849235,
+        "active_plastic_area_m2": 0.008225131943849235,
+        "residual_history": [
+          0.007245421332975299,
+          0.00020484286821173257,
+          4.086101909077439e-08,
+          1.9373090611051332e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1401,
+            "relative_residual": 8.584955537602412e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1370,
+            "relative_residual": 7.719452005857834e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1546,
+            "relative_residual": 7.087432406351863e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.85742274227829,
+        "wall_min_segment_m": 0.09238334626836121,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.0050294665781535075,
+        "height_closure": 0.008774404169099581,
+        "width_closure_mm": 67.69662014194621,
+        "height_closure_mm": 96.95716606855035,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.008774404169099581,
+        "signed_max_closure_mismatch": -0.01622559583090042,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.019970533421846494,
+        "width_signed_overshoot_mm": -268.80337985805386,
+        "height_signed_margin": 0.01622559583090042,
+        "height_signed_overshoot_mm": -179.29283393144962
+      },
+      "wall_seconds": 20.352510199998505
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.7375,
+        "residual_max": 5.06293176868353e-11,
+        "j_min": 0.9707460509363514,
+        "yield_max": 3.2298382718343177e-16,
+        "plastic_volume_max": 7.704205112410434e-16,
+        "kappa_max": 0.0005946622597046538,
+        "delta_lambda_max": 0.0005377742610384159,
+        "cumulative_plastic_area_m2": 0.08772972224325448,
+        "active_plastic_area_m2": 0.08772972224325448,
+        "residual_history": [
+          0.0072446280362464775,
+          0.00293439641708322,
+          1.7475016453797476e-05,
+          3.5790408967331626e-08,
+          1.3499466608802117e-09,
+          5.06293164308782e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1479,
+            "relative_residual": 9.892918203908333e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1214,
+            "relative_residual": 8.510200302448109e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1257,
+            "relative_residual": 8.506343673345193e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1324,
+            "relative_residual": 6.69080307023607e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1447,
+            "relative_residual": 9.380129596547346e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.77773183791413,
+        "wall_min_segment_m": 0.09234186064763719,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.005278773007053594,
+        "height_closure": 0.00921226948467968,
+        "width_closure_mm": 71.05228467494139,
+        "height_closure_mm": 101.79557780571045,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.00921226948467968,
+        "signed_max_closure_mismatch": -0.01578773051532032,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.019721226992946407,
+        "width_signed_overshoot_mm": -265.44771532505865,
+        "height_signed_margin": 0.01578773051532032,
+        "height_signed_overshoot_mm": -174.45442219428952
+      },
+      "wall_seconds": 53.68345349999436
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.725,
+        "residual_max": 1.609929202692077e-14,
+        "j_min": 0.9706101235605866,
+        "yield_max": 2.693158196453993e-16,
+        "plastic_volume_max": 9.09808253041211e-16,
+        "kappa_max": 0.0011682301316604032,
+        "delta_lambda_max": 0.0005740932996680774,
+        "cumulative_plastic_area_m2": 0.18822307885713513,
+        "active_plastic_area_m2": 0.18822307885713513,
+        "residual_history": [
+          0.007243838085346503,
+          0.0028274153470430113,
+          4.086395881398245e-05,
+          4.5220681673854845e-09,
+          1.609929202692077e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1442,
+            "relative_residual": 5.508479979626011e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1311,
+            "relative_residual": 6.472795283969141e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1381,
+            "relative_residual": 5.5942765363332e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1368,
+            "relative_residual": 8.61318224241663e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.69799442146424,
+        "wall_min_segment_m": 0.09230198849973177,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.005528298655235853,
+        "height_closure": 0.009650447013724306,
+        "width_closure_mm": 74.4108998994746,
+        "height_closure_mm": 106.63743950165356,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.009650447013724306,
+        "signed_max_closure_mismatch": -0.015349552986275695,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.01947170134476415,
+        "width_signed_overshoot_mm": -262.0891001005255,
+        "height_signed_margin": 0.015349552986275695,
+        "height_signed_overshoot_mm": -169.61256049834643
+      },
+      "wall_seconds": 80.4655550000025
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.7124999999999999,
+        "residual_max": 2.0230740984257806e-14,
+        "j_min": 0.9705760819137094,
+        "yield_max": 4.705437428587089e-16,
+        "plastic_volume_max": 9.782756202336707e-16,
+        "kappa_max": 0.001781110397781181,
+        "delta_lambda_max": 0.0006130519326488826,
+        "cumulative_plastic_area_m2": 0.34820182093574537,
+        "active_plastic_area_m2": 0.34820182093574537,
+        "residual_history": [
+          0.007243053531856277,
+          0.002857266401703024,
+          0.00011630754292364889,
+          2.227947202097752e-08,
+          2.0230740984257806e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1495,
+            "relative_residual": 5.125885496050652e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1330,
+            "relative_residual": 4.7071569030249665e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1415,
+            "relative_residual": 3.3292248670139734e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1285,
+            "relative_residual": 8.227303201486124e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.61816794792801,
+        "wall_min_segment_m": 0.09226517817269254,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.005778204187244729,
+        "height_closure": 0.010089088838892368,
+        "width_closure_mm": 77.77462836031407,
+        "height_closure_mm": 111.48443166976065,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.010089088838892368,
+        "signed_max_closure_mismatch": -0.014910911161107633,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.019221795812755273,
+        "width_signed_overshoot_mm": -258.725371639686,
+        "height_signed_margin": 0.014910911161107633,
+        "height_signed_overshoot_mm": -164.76556833023935
+      },
+      "wall_seconds": 28.428678900003433
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.7,
+        "residual_max": 2.3607954968909826e-14,
+        "j_min": 0.970489388026863,
+        "yield_max": 3.9893218936604136e-16,
+        "plastic_volume_max": 1.0233784306090676e-15,
+        "kappa_max": 0.0024318317222717057,
+        "delta_lambda_max": 0.0006507213244905249,
+        "cumulative_plastic_area_m2": 0.49917546879344565,
+        "active_plastic_area_m2": 0.49917546879344565,
+        "residual_history": [
+          0.007242275918693381,
+          0.0030877387370358412,
+          0.00012330288783296583,
+          4.542003779237004e-08,
+          2.360735459367538e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1601,
+            "relative_residual": 9.761623774370069e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1449,
+            "relative_residual": 4.533988338439692e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1382,
+            "relative_residual": 7.254726340942366e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1376,
+            "relative_residual": 9.754545951008095e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.53823426329316,
+        "wall_min_segment_m": 0.09223468534041855,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.0060285508183086645,
+        "height_closure": 0.010528256761354937,
+        "width_closure_mm": 81.14429401443464,
+        "height_closure_mm": 116.33723721297204,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.010528256761354937,
+        "signed_max_closure_mismatch": -0.014471743238645064,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.018971449181691337,
+        "width_signed_overshoot_mm": -255.35570598556546,
+        "height_signed_margin": 0.014471743238645064,
+        "height_signed_overshoot_mm": -159.91276278702796
+      },
+      "wall_seconds": 52.70152149999922
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.6875,
+        "residual_max": 7.413625381063807e-14,
+        "j_min": 0.970351317869205,
+        "yield_max": 4.549312315749177e-16,
+        "plastic_volume_max": 1.0878342497633309e-15,
+        "kappa_max": 0.003117633664828463,
+        "delta_lambda_max": 0.0006864944474811744,
+        "cumulative_plastic_area_m2": 0.7048284444032122,
+        "active_plastic_area_m2": 0.7048284444032122,
+        "residual_history": [
+          0.007241506071378645,
+          0.00329307186634809,
+          0.0001307925008257239,
+          1.5223080824903232e-07,
+          7.412787399218995e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1453,
+            "relative_residual": 5.676738470728275e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1376,
+            "relative_residual": 5.7758050528999994e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1825,
+            "relative_residual": 5.0972377635768255e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1247,
+            "relative_residual": 3.7694920340775094e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.45817823308893,
+        "wall_min_segment_m": 0.0922047110264839,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.006279383153450557,
+        "height_closure": 0.010968001008932582,
+        "width_closure_mm": 84.52049724544452,
+        "height_closure_mm": 121.19641114870502,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.010968001008932582,
+        "signed_max_closure_mismatch": -0.01403199899106742,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.018720616846549444,
+        "width_signed_overshoot_mm": -251.97950275455554,
+        "height_signed_margin": 0.01403199899106742,
+        "height_signed_overshoot_mm": -155.05358885129496
+      },
+      "wall_seconds": 72.35582789999899
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.675,
+        "residual_max": 3.1624427363510526e-14,
+        "j_min": 0.9703122180458509,
+        "yield_max": 4.518954654919582e-16,
+        "plastic_volume_max": 1.2684081215907916e-15,
+        "kappa_max": 0.0038490813643795164,
+        "delta_lambda_max": 0.0007314476995510535,
+        "cumulative_plastic_area_m2": 0.907532433920869,
+        "active_plastic_area_m2": 0.907532433920869,
+        "residual_history": [
+          0.007240744646767308,
+          0.0035295088643131686,
+          6.466699741859597e-05,
+          5.6483028234710084e-09,
+          3.1624427363510526e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1350,
+            "relative_residual": 9.688536290515393e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1454,
+            "relative_residual": 2.986208842217333e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1607,
+            "relative_residual": 3.3435999878802105e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1935,
+            "relative_residual": 9.266424241350681e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.37795933288012,
+        "wall_min_segment_m": 0.09215939209552688,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.006530832033541878,
+        "height_closure": 0.011408465013397873,
+        "width_closure_mm": 87.90499917147369,
+        "height_closure_mm": 126.06353839804649,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.011408465013397873,
+        "signed_max_closure_mismatch": -0.013591534986602129,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.018469167966458123,
+        "width_signed_overshoot_mm": -248.5950008285264,
+        "height_signed_margin": 0.013591534986602129,
+        "height_signed_overshoot_mm": -150.1864616019535
+      },
+      "wall_seconds": 54.28389409999363
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.6625000000000001,
+        "residual_max": 6.684556220448585e-11,
+        "j_min": 0.9702700137902974,
+        "yield_max": 4.445228907190568e-16,
+        "plastic_volume_max": 1.4353752561535593e-15,
+        "kappa_max": 0.004618789858686082,
+        "delta_lambda_max": 0.0007697084943068713,
+        "cumulative_plastic_area_m2": 1.163016928689631,
+        "active_plastic_area_m2": 1.163016928689631,
+        "residual_history": [
+          0.007239992940473291,
+          0.003735904788493938,
+          5.096823510815671e-05,
+          1.1597059560186981e-07,
+          2.831624265723856e-09,
+          6.684554524622972e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1510,
+            "relative_residual": 5.0050095808492174e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1763,
+            "relative_residual": 8.254172225665286e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1317,
+            "relative_residual": 7.028178273501258e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1487,
+            "relative_residual": 9.807930529312159e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1423,
+            "relative_residual": 9.318212306547602e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.29755372913198,
+        "wall_min_segment_m": 0.09210706673048293,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.006782951491832168,
+        "height_closure": 0.011849734834224801,
+        "width_closure_mm": 91.29852708006099,
+        "height_closure_mm": 130.93956991818405,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.011849734834224801,
+        "signed_max_closure_mismatch": -0.0131502651657752,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.018217048508167834,
+        "width_signed_overshoot_mm": -245.2014729199391,
+        "height_signed_margin": 0.0131502651657752,
+        "height_signed_overshoot_mm": -145.31043008181595
+      },
+      "wall_seconds": 25.422766599993338
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.65,
+        "residual_max": 3.497399754294748e-14,
+        "j_min": 0.9701640226772382,
+        "yield_max": 4.0288952729561345e-16,
+        "plastic_volume_max": 1.6758512980108442e-15,
+        "kappa_max": 0.005426343737547257,
+        "delta_lambda_max": 0.0008075538788611999,
+        "cumulative_plastic_area_m2": 1.4898298824172307,
+        "active_plastic_area_m2": 1.4898298824172307,
+        "residual_history": [
+          0.007239251530616425,
+          0.003943052528873891,
+          0.0001304028671392849,
+          8.03767547116259e-09,
+          3.497399754294748e-14
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1443,
+            "relative_residual": 9.841598123681249e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1714,
+            "relative_residual": 9.744492863624427e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1311,
+            "relative_residual": 9.463499415807559e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1395,
+            "relative_residual": 6.15282469103881e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.21692955160734,
+        "wall_min_segment_m": 0.09205479850830514,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.007035804231262266,
+        "height_closure": 0.012291930162373954,
+        "width_closure_mm": 94.70192495279012,
+        "height_closure_mm": 135.82582829423217,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.012291930162373954,
+        "signed_max_closure_mismatch": -0.012708069837626047,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.017964195768737735,
+        "width_signed_overshoot_mm": -241.79807504720995,
+        "height_signed_margin": 0.012708069837626047,
+        "height_signed_overshoot_mm": -140.42417170576783
+      },
+      "wall_seconds": 28.959526000006008
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.6375,
+        "residual_max": 4.664812046958725e-12,
+        "j_min": 0.9700690143744723,
+        "yield_max": 5.017687654262915e-16,
+        "plastic_volume_max": 1.822327011513636e-15,
+        "kappa_max": 0.006275682354979364,
+        "delta_lambda_max": 0.000849388891938242,
+        "cumulative_plastic_area_m2": 1.9092648509234564,
+        "active_plastic_area_m2": 1.9092648509234564,
+        "residual_history": [
+          0.0072385210477746795,
+          0.004147364420905649,
+          0.0001419160105125115,
+          2.839063475158763e-06,
+          4.664823778651634e-12
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1421,
+            "relative_residual": 4.893389855421558e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1505,
+            "relative_residual": 6.315265141947642e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1527,
+            "relative_residual": 9.694140038100219e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1291,
+            "relative_residual": 9.982131144440851e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.13603321317957,
+        "wall_min_segment_m": 0.09200169809079026,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.007289495455305439,
+        "height_closure": 0.012735250162000833,
+        "width_closure_mm": 98.11660882841123,
+        "height_closure_mm": 140.72451429010917,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.012735250162000833,
+        "signed_max_closure_mismatch": -0.012264749837999168,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.017710504544694562,
+        "width_signed_overshoot_mm": -238.38339117158884,
+        "height_signed_margin": 0.012264749837999168,
+        "height_signed_overshoot_mm": -135.52548570989077
+      },
+      "wall_seconds": 23.326507000005222
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.625,
+        "residual_max": 7.255713454033669e-13,
+        "j_min": 0.9700352726381434,
+        "yield_max": 5.224770269207646e-16,
+        "plastic_volume_max": 1.7813441693936838e-15,
+        "kappa_max": 0.007166959057117128,
+        "delta_lambda_max": 0.0008912767021377644,
+        "cumulative_plastic_area_m2": 2.4484495723470507,
+        "active_plastic_area_m2": 2.4484495723470507,
+        "residual_history": [
+          0.007237802615345926,
+          0.0043657511193272765,
+          0.00012575000408604627,
+          4.985074410798917e-07,
+          7.25588349859953e-13
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1366,
+            "relative_residual": 8.435889891231839e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1608,
+            "relative_residual": 5.2664947555404485e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1411,
+            "relative_residual": 6.994822975066468e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1520,
+            "relative_residual": 4.8681582123289915e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 119.0547936185425,
+        "wall_min_segment_m": 0.09194781298633435,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.007544101789431323,
+        "height_closure": 0.013179965685249151,
+        "width_closure_mm": 101.54361008574564,
+        "height_closure_mm": 145.6386208220031,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.013179965685249151,
+        "signed_max_closure_mismatch": -0.01182003431475085,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.017455898210568678,
+        "width_signed_overshoot_mm": -234.95638991425446,
+        "height_signed_margin": 0.01182003431475085,
+        "height_signed_overshoot_mm": -130.6113791779969
+      },
+      "wall_seconds": 13.62585530000797
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.6125,
+        "residual_max": 1.1514950174643834e-10,
+        "j_min": 0.9700244113449088,
+        "yield_max": 4.600379932139138e-16,
+        "plastic_volume_max": 1.8832591736073212e-15,
+        "kappa_max": 0.008099083993909045,
+        "delta_lambda_max": 0.0009328604840496541,
+        "cumulative_plastic_area_m2": 3.5691507825674735,
+        "active_plastic_area_m2": 3.5691507825674735,
+        "residual_history": [
+          0.007237097536893142,
+          0.00458246526982595,
+          6.235036081956304e-05,
+          2.6129726553594658e-06,
+          2.325872027316983e-09,
+          1.1514949705011262e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1453,
+            "relative_residual": 2.724117525836928e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1452,
+            "relative_residual": 6.730548314053364e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1290,
+            "relative_residual": 9.709140792424667e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1513,
+            "relative_residual": 7.054086582137544e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1459,
+            "relative_residual": 2.02706177628499e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.97307405878405,
+        "wall_min_segment_m": 0.09189384948908727,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.007799597943374259,
+        "height_closure": 0.013626649157908344,
+        "width_closure_mm": 104.98258831781756,
+        "height_closure_mm": 150.5744731948872,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.013626649157908344,
+        "signed_max_closure_mismatch": -0.011373350842091658,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.017200402056625742,
+        "width_signed_overshoot_mm": -231.51741168218254,
+        "height_signed_margin": 0.011373350842091658,
+        "height_signed_overshoot_mm": -125.6755268051128
+      },
+      "wall_seconds": 115.16066700000374
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.6,
+        "residual_max": 1.5304355478296018e-10,
+        "j_min": 0.9699745022774104,
+        "yield_max": 5.611830444784971e-16,
+        "plastic_volume_max": 2.235191198796116e-15,
+        "kappa_max": 0.00906740486245166,
+        "delta_lambda_max": 0.0009686464337107194,
+        "cumulative_plastic_area_m2": 6.601697850226846,
+        "active_plastic_area_m2": 6.601697850226846,
+        "residual_history": [
+          0.007236407254208055,
+          0.0047682150248102954,
+          9.318424506882196e-05,
+          1.7080410358035521e-07,
+          3.1877882335687748e-09,
+          1.5304355478296018e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1545,
+            "relative_residual": 6.929765245028457e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1501,
+            "relative_residual": 9.589200742100074e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1386,
+            "relative_residual": 8.333081814550485e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1414,
+            "relative_residual": 7.821110868483373e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1406,
+            "relative_residual": 9.1483614208378e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.8903594854678,
+        "wall_min_segment_m": 0.09184041079601302,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.008057260119943233,
+        "height_closure": 0.014077697072679696,
+        "width_closure_mm": 108.45072121443593,
+        "height_closure_mm": 155.5585526531106,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.014077697072679696,
+        "signed_max_closure_mismatch": -0.010922302927320306,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.01694273988005677,
+        "width_signed_overshoot_mm": -228.04927878556416,
+        "height_signed_margin": 0.010922302927320306,
+        "height_signed_overshoot_mm": -120.69144734688938
+      },
+      "wall_seconds": 80.387516399991
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.5874999999999999,
+        "residual_max": 8.907022412600223e-11,
+        "j_min": 0.9698787960029269,
+        "yield_max": 5.793976409762536e-16,
+        "plastic_volume_max": 2.33211887301632e-15,
+        "kappa_max": 0.010077688624359125,
+        "delta_lambda_max": 0.001010442610793749,
+        "cumulative_plastic_area_m2": 10.105553787295143,
+        "active_plastic_area_m2": 10.105553787295143,
+        "residual_history": [
+          0.007235729078352305,
+          0.004961217921151671,
+          0.00017438867848612336,
+          1.2610095289857052e-07,
+          2.5711807352571484e-09,
+          8.907021614767363e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1946,
+            "relative_residual": 9.75828336224377e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1400,
+            "relative_residual": 4.744605876160197e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1438,
+            "relative_residual": 9.122251693891945e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1500,
+            "relative_residual": 3.5139121152094013e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1210,
+            "relative_residual": 9.463219552096974e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.80606436966062,
+        "wall_min_segment_m": 0.09178677156670352,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.008320519581598962,
+        "height_closure": 0.014535641402364297,
+        "width_closure_mm": 111.99419356832205,
+        "height_closure_mm": 160.61883749612545,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.014535641402364297,
+        "signed_max_closure_mismatch": -0.010464358597635705,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.01667948041840104,
+        "width_signed_overshoot_mm": -224.50580643167802,
+        "height_signed_margin": 0.010464358597635705,
+        "height_signed_overshoot_mm": -115.63116250387452
+      },
+      "wall_seconds": 209.18426350000664
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.575,
+        "residual_max": 4.1441574122321936e-11,
+        "j_min": 0.9698534542742753,
+        "yield_max": 5.377642775528102e-16,
+        "plastic_volume_max": 2.4754504002189037e-15,
+        "kappa_max": 0.01113126168635402,
+        "delta_lambda_max": 0.0010541340328972554,
+        "cumulative_plastic_area_m2": 13.552235414903544,
+        "active_plastic_area_m2": 13.552235414903544,
+        "residual_history": [
+          0.007235060314823395,
+          0.005159015193334884,
+          9.460391864752903e-05,
+          1.5734772683137483e-07,
+          1.5157904918987508e-09,
+          4.144157014453121e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1508,
+            "relative_residual": 9.770319792777944e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1500,
+            "relative_residual": 7.112391206179978e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1784,
+            "relative_residual": 4.218198968692017e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1393,
+            "relative_residual": 3.423296822488967e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1421,
+            "relative_residual": 8.151129010567525e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.72009979050674,
+        "wall_min_segment_m": 0.091732354206059,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.008590685824340527,
+        "height_closure": 0.015000772897454384,
+        "width_closure_mm": 115.63063119562352,
+        "height_closure_mm": 165.7585405168709,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.015000772897454384,
+        "signed_max_closure_mismatch": -0.009999227102545617,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.016409314175659474,
+        "width_signed_overshoot_mm": -220.86936880437656,
+        "height_signed_margin": 0.009999227102545617,
+        "height_signed_overshoot_mm": -110.49145948312906
+      },
+      "wall_seconds": 193.21133030000783
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.5625,
+        "residual_max": 1.3657311082474188e-10,
+        "j_min": 0.9698469335766358,
+        "yield_max": 6.314393452555578e-16,
+        "plastic_volume_max": 2.515132199731873e-15,
+        "kappa_max": 0.01223187675075725,
+        "delta_lambda_max": 0.0011006150644032517,
+        "cumulative_plastic_area_m2": 17.077046311505665,
+        "active_plastic_area_m2": 17.077046311505665,
+        "residual_history": [
+          0.007234403468514296,
+          0.00535131084225615,
+          0.00011292163375848826,
+          8.136671394465496e-07,
+          3.4664274337347018e-09,
+          1.3657310977802986e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1369,
+            "relative_residual": 8.136146403835963e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1764,
+            "relative_residual": 6.515717294267097e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1623,
+            "relative_residual": 9.087641099711406e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1383,
+            "relative_residual": 4.407818648895181e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1454,
+            "relative_residual": 3.692612663525941e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.63237880342041,
+        "wall_min_segment_m": 0.09167715346142026,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.008868537240989793,
+        "height_closure": 0.01547336323235271,
+        "width_closure_mm": 119.37051126372263,
+        "height_closure_mm": 170.98066371749744,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.01547336323235271,
+        "signed_max_closure_mismatch": -0.009526636767647291,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.016131462759010208,
+        "width_signed_overshoot_mm": -217.12948873627744,
+        "height_signed_margin": 0.009526636767647291,
+        "height_signed_overshoot_mm": -105.26933628250255
+      },
+      "wall_seconds": 156.46349599999667
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.55,
+        "residual_max": 7.635706239343224e-11,
+        "j_min": 0.9698476711860712,
+        "yield_max": 5.338611497318624e-16,
+        "plastic_volume_max": 2.312820074346078e-15,
+        "kappa_max": 0.0133795290063451,
+        "delta_lambda_max": 0.0011476522555878479,
+        "cumulative_plastic_area_m2": 20.75080598449618,
+        "active_plastic_area_m2": 20.75080598449618,
+        "residual_history": [
+          0.007233762277363858,
+          0.005546833193975995,
+          0.00010201193550849873,
+          1.7560067859458223e-06,
+          2.7293709484686843e-09,
+          7.63570589658479e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1414,
+            "relative_residual": 8.329774659330728e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1738,
+            "relative_residual": 9.766572740473639e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1396,
+            "relative_residual": 3.482060313993487e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1353,
+            "relative_residual": 9.907323757476702e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1283,
+            "relative_residual": 2.3087165266428335e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.54284817437983,
+        "wall_min_segment_m": 0.09162130562965723,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.009154507597133876,
+        "height_closure": 0.01595356197629838,
+        "width_closure_mm": 123.219672257422,
+        "height_closure_mm": 176.2868598380971,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.01595356197629838,
+        "signed_max_closure_mismatch": -0.009046438023701621,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.015845492402866125,
+        "width_signed_overshoot_mm": -213.28032774257807,
+        "height_signed_margin": 0.009046438023701621,
+        "height_signed_overshoot_mm": -99.9631401619029
+      },
+      "wall_seconds": 160.37505590000364
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.5375000000000001,
+        "residual_max": 2.9750928553664967e-10,
+        "j_min": 0.9698398537049404,
+        "yield_max": 5.076234571577132e-16,
+        "plastic_volume_max": 2.3978215246689416e-15,
+        "kappa_max": 0.014577022185289336,
+        "delta_lambda_max": 0.0011976180618940388,
+        "cumulative_plastic_area_m2": 24.62929328634557,
+        "active_plastic_area_m2": 24.62929328634557,
+        "residual_history": [
+          0.007233139660956692,
+          0.005734751177348699,
+          0.00012295095581603698,
+          1.0104623554614466e-07,
+          5.523043149495956e-09,
+          2.9750928210906534e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1385,
+            "relative_residual": 9.779420489046121e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1780,
+            "relative_residual": 9.11845331362737e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1336,
+            "relative_residual": 9.974831872372412e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1720,
+            "relative_residual": 9.563657124555474e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1372,
+            "relative_residual": 5.811772029977917e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.4513594648418,
+        "wall_min_segment_m": 0.09156432000988259,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.009449288388234556,
+        "height_closure": 0.016441860853598667,
+        "width_closure_mm": 127.18742170563715,
+        "height_closure_mm": 181.68256243226526,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.016441860853598667,
+        "signed_max_closure_mismatch": -0.008558139146401335,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.015550711611765446,
+        "width_signed_overshoot_mm": -209.31257829436294,
+        "height_signed_margin": 0.008558139146401335,
+        "height_signed_overshoot_mm": -94.56743756773474
+      },
+      "wall_seconds": 160.99121059999743
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.525,
+        "residual_max": 7.642342409088867e-11,
+        "j_min": 0.9698185639869505,
+        "yield_max": 5.741934705483231e-16,
+        "plastic_volume_max": 2.5517782331618832e-15,
+        "kappa_max": 0.015826567406036874,
+        "delta_lambda_max": 0.0012513571712930336,
+        "cumulative_plastic_area_m2": 28.944842587831694,
+        "active_plastic_area_m2": 28.944842587831694,
+        "residual_history": [
+          0.007232540856852383,
+          0.005917558970882642,
+          0.00017951159181980197,
+          3.266523021370312e-07,
+          5.101964345243726e-09,
+          7.642342260888368e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1431,
+            "relative_residual": 4.84919759295154e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1879,
+            "relative_residual": 8.153158109738984e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1395,
+            "relative_residual": 9.085723755172912e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1343,
+            "relative_residual": 8.575731187406114e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1232,
+            "relative_residual": 5.309463683497811e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.3578125773287,
+        "wall_min_segment_m": 0.091506087611513,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.009753337201403145,
+        "height_closure": 0.01693850564130084,
+        "width_closure_mm": 131.27991873088635,
+        "height_closure_mm": 187.17048733637426,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.01693850564130084,
+        "signed_max_closure_mismatch": -0.008061494358699163,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.015246662798596856,
+        "width_signed_overshoot_mm": -205.22008126911373,
+        "height_signed_margin": 0.008061494358699163,
+        "height_signed_overshoot_mm": -89.07951266362574
+      },
+      "wall_seconds": 134.96792680000362
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.5125,
+        "residual_max": 1.425054388459991e-10,
+        "j_min": 0.9698153989708905,
+        "yield_max": 4.822531263215524e-16,
+        "plastic_volume_max": 2.7699197102659667e-15,
+        "kappa_max": 0.017131544539369884,
+        "delta_lambda_max": 0.0013065216784729284,
+        "cumulative_plastic_area_m2": 32.86588249071654,
+        "active_plastic_area_m2": 32.86588249071654,
+        "residual_history": [
+          0.007231972163235906,
+          0.006101972399824516,
+          0.00015144938318575977,
+          9.418623156913254e-08,
+          3.4401499696343663e-09,
+          1.4250544668927149e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1444,
+            "relative_residual": 4.517784513656065e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1380,
+            "relative_residual": 7.314382823005855e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1391,
+            "relative_residual": 3.450633373797552e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1355,
+            "relative_residual": 7.37063518694801e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1469,
+            "relative_residual": 9.712451831694164e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.26209825405749,
+        "wall_min_segment_m": 0.09144687501513521,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.01006721766932972,
+        "height_closure": 0.0174438787052833,
+        "width_closure_mm": 135.50474982917808,
+        "height_closure_mm": 192.75485969338044,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.0174438787052833,
+        "signed_max_closure_mismatch": -0.007556121294716701,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.014932782330670281,
+        "width_signed_overshoot_mm": -200.99525017082203,
+        "height_signed_margin": 0.007556121294716701,
+        "height_signed_overshoot_mm": -83.49514030661955
+      },
+      "wall_seconds": 141.0465003999998
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.5,
+        "residual_max": 2.4062809744549135e-11,
+        "j_min": 0.9698281325234511,
+        "yield_max": 6.38378239159465e-16,
+        "plastic_volume_max": 2.7798943702528334e-15,
+        "kappa_max": 0.01848945448927215,
+        "delta_lambda_max": 0.0013609832665930253,
+        "cumulative_plastic_area_m2": 37.8072241865466,
+        "active_plastic_area_m2": 37.8072241865466,
+        "residual_history": [
+          0.007231439255084535,
+          0.006272290012412202,
+          0.00017088126539984078,
+          1.6550443672036192e-06,
+          3.822316497004663e-09,
+          2.4062812630031032e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1443,
+            "relative_residual": 8.4086749082935e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1350,
+            "relative_residual": 5.507292991115725e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1547,
+            "relative_residual": 5.6424203003933167e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1382,
+            "relative_residual": 7.771541040798014e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1452,
+            "relative_residual": 1.8078142739089303e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.16403952444165,
+        "wall_min_segment_m": 0.09138624226579939,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.010391663018346375,
+        "height_closure": 0.0179583936352542,
+        "width_closure_mm": 139.87178422694225,
+        "height_closure_mm": 198.44024966955888,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.0179583936352542,
+        "signed_max_closure_mismatch": -0.007041606364745802,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.014608336981653626,
+        "width_signed_overshoot_mm": -196.62821577305783,
+        "height_signed_margin": 0.007041606364745802,
+        "height_signed_overshoot_mm": -77.8097503304411
+      },
+      "wall_seconds": 129.76921199999924
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.4875,
+        "residual_max": 6.880561187723876e-11,
+        "j_min": 0.9698378478209293,
+        "yield_max": 5.296327612591689e-16,
+        "plastic_volume_max": 2.8380076066980564e-15,
+        "kappa_max": 0.019908139901968006,
+        "delta_lambda_max": 0.0014218684990019012,
+        "cumulative_plastic_area_m2": 42.147848259301554,
+        "active_plastic_area_m2": 42.147848259301554,
+        "residual_history": [
+          0.0072309513807971145,
+          0.006439365680794967,
+          0.00015109785728873153,
+          3.033739115193089e-07,
+          2.508649627485266e-09,
+          6.880562079400892e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1657,
+            "relative_residual": 8.170153275076561e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1588,
+            "relative_residual": 7.238091351229294e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1564,
+            "relative_residual": 4.244356556028668e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1418,
+            "relative_residual": 3.3614794902482743e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1363,
+            "relative_residual": 9.954251622372444e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 118.06348767924666,
+        "wall_min_segment_m": 0.0913245528065646,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.010727387038103386,
+        "height_closure": 0.01848255983171887,
+        "width_closure_mm": 144.3906295328716,
+        "height_closure_mm": 204.2322861404935,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.01848255983171887,
+        "signed_max_closure_mismatch": -0.006517440168281131,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.014272612961896615,
+        "width_signed_overshoot_mm": -192.10937046712849,
+        "height_signed_margin": 0.006517440168281131,
+        "height_signed_overshoot_mm": -72.01771385950649
+      },
+      "wall_seconds": 87.95321300000069
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.475,
+        "residual_max": 3.991949765916177e-10,
+        "j_min": 0.9698567882368335,
+        "yield_max": 4.85722573273506e-16,
+        "plastic_volume_max": 3.131175874138137e-15,
+        "kappa_max": 0.021386283545130287,
+        "delta_lambda_max": 0.0014813153667123373,
+        "cumulative_plastic_area_m2": 47.22700233631171,
+        "active_plastic_area_m2": 47.22700233631171,
+        "residual_history": [
+          0.0072305183724172785,
+          0.006598316384028729,
+          0.00022400364719359309,
+          8.105311340090007e-07,
+          1.941419477299807e-08,
+          3.991949611786913e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1563,
+            "relative_residual": 8.898206422500565e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1678,
+            "relative_residual": 5.6629474906578335e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1431,
+            "relative_residual": 8.350310557424597e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1675,
+            "relative_residual": 2.5673499208402285e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1307,
+            "relative_residual": 5.182477342541055e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.96027130450716,
+        "wall_min_segment_m": 0.09126142977109207,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.011075094115709061,
+        "height_closure": 0.019016611362924873,
+        "width_closure_mm": 149.07076679744398,
+        "height_closure_mm": 210.13355556031982,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.019016611362924873,
+        "signed_max_closure_mismatch": -0.005983388637075128,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.01392490588429094,
+        "width_signed_overshoot_mm": -187.42923320255608,
+        "height_signed_margin": 0.005983388637075128,
+        "height_signed_overshoot_mm": -66.11644443968017
+      },
+      "wall_seconds": 135.05184949999966
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.4625,
+        "residual_max": 1.601569474453687e-10,
+        "j_min": 0.9698885272438815,
+        "yield_max": 6.010816844259637e-16,
+        "plastic_volume_max": 3.376205565119861e-15,
+        "kappa_max": 0.02292409436225724,
+        "delta_lambda_max": 0.0015415177596175879,
+        "cumulative_plastic_area_m2": 53.31548585700513,
+        "active_plastic_area_m2": 53.31548585700513,
+        "residual_history": [
+          0.007230154952821065,
+          0.006748586614880647,
+          0.00017065832065537974,
+          8.816460756375008e-07,
+          1.3466898374910848e-08,
+          1.6015695089511892e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1425,
+            "relative_residual": 9.249302398655186e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1835,
+            "relative_residual": 4.584243445364623e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1379,
+            "relative_residual": 6.00840547547517e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1625,
+            "relative_residual": 6.556075321006781e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1495,
+            "relative_residual": 8.878350534536626e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.85410819445141,
+        "wall_min_segment_m": 0.09119673361121888,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.011436111343321564,
+        "height_closure": 0.019561274064471612,
+        "width_closure_mm": 153.93005868110828,
+        "height_closure_mm": 216.1520784124113,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.019561274064471612,
+        "signed_max_closure_mismatch": -0.005438725935528389,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.013563888656678437,
+        "width_signed_overshoot_mm": -182.56994131889178,
+        "height_signed_margin": 0.005438725935528389,
+        "height_signed_overshoot_mm": -60.0979215875887
+      },
+      "wall_seconds": 136.70709599999827
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.45,
+        "residual_max": 4.5008376871914645e-11,
+        "j_min": 0.9699297427978774,
+        "yield_max": 4.761815941556335e-16,
+        "plastic_volume_max": 3.25585912397397e-15,
+        "kappa_max": 0.024524573355889392,
+        "delta_lambda_max": 0.0016042537445827803,
+        "cumulative_plastic_area_m2": 59.12132796807573,
+        "active_plastic_area_m2": 59.12132796807573,
+        "residual_history": [
+          0.007229879820680079,
+          0.006893913496440842,
+          0.00017926597162784934,
+          3.7057422413480934e-06,
+          2.7608993041748653e-08,
+          1.1183576891901839e-09,
+          4.500837423603105e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1725,
+            "relative_residual": 5.4913014534643454e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1490,
+            "relative_residual": 8.032977031301992e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1362,
+            "relative_residual": 4.5313868360092064e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1671,
+            "relative_residual": 8.487252236181146e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1267,
+            "relative_residual": 8.564704556703384e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1388,
+            "relative_residual": 3.394692763720514e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.74481422912996,
+        "wall_min_segment_m": 0.09113064689515604,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.011811281713572375,
+        "height_closure": 0.020116699366211965,
+        "width_closure_mm": 158.97985186468418,
+        "height_closure_mm": 222.2895279966422,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.020116699366211965,
+        "signed_max_closure_mismatch": -0.004883300633788036,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.013188718286427627,
+        "width_signed_overshoot_mm": -177.52014813531588,
+        "height_signed_margin": 0.004883300633788036,
+        "height_signed_overshoot_mm": -53.96047200335779
+      },
+      "wall_seconds": 115.89102579999599
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.4375,
+        "residual_max": 6.138735142036215e-11,
+        "j_min": 0.969982494187411,
+        "yield_max": 5.2562121322097255e-16,
+        "plastic_volume_max": 3.114696001116357e-15,
+        "kappa_max": 0.026185570542755988,
+        "delta_lambda_max": 0.001665064221727244,
+        "cumulative_plastic_area_m2": 66.15892532519455,
+        "active_plastic_area_m2": 66.15892532519455,
+        "residual_history": [
+          0.007229721924331873,
+          0.007024161119876304,
+          0.00031052986495601185,
+          7.276414521740964e-06,
+          1.0323078330455848e-07,
+          2.503718476029461e-09,
+          6.138733558807323e-11
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1521,
+            "relative_residual": 9.698376664984828e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1623,
+            "relative_residual": 5.210977370525395e-12,
+            "restarts": 0
+          },
+          {
+            "iterations": 1430,
+            "relative_residual": 2.162894099593785e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1333,
+            "relative_residual": 9.23074580695974e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1347,
+            "relative_residual": 9.958752368973134e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1405,
+            "relative_residual": 9.370578839543593e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.63202216961972,
+        "wall_min_segment_m": 0.09106281049475484,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.01220218940625395,
+        "height_closure": 0.020683090546359528,
+        "width_closure_mm": 164.24146940817818,
+        "height_closure_mm": 228.54815053727276,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.020683090546359528,
+        "signed_max_closure_mismatch": -0.004316909453640473,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.012797810593746052,
+        "width_signed_overshoot_mm": -172.25853059182188,
+        "height_signed_margin": 0.004316909453640473,
+        "height_signed_overshoot_mm": -47.701849462727225
+      },
+      "wall_seconds": 156.99133689999871
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.425,
+        "residual_max": 5.780472496877795e-10,
+        "j_min": 0.9700522353290036,
+        "yield_max": 5.447031714567174e-16,
+        "plastic_volume_max": 3.146788385421928e-15,
+        "kappa_max": 0.02790721400993216,
+        "delta_lambda_max": 0.0017265223155548681,
+        "cumulative_plastic_area_m2": 75.81570813636141,
+        "active_plastic_area_m2": 75.81570813636141,
+        "residual_history": [
+          0.007229732606350468,
+          0.007147226485511636,
+          0.0002196115297019823,
+          1.3417201403200624e-06,
+          2.3021009663460375e-08,
+          5.780472487100905e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1537,
+            "relative_residual": 9.522007612453266e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1450,
+            "relative_residual": 9.479285432168742e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1383,
+            "relative_residual": 3.4247566320517774e-12,
+            "restarts": 0
+          },
+          {
+            "iterations": 1436,
+            "relative_residual": 7.025579863967251e-11,
+            "restarts": 1
+          },
+          {
+            "iterations": 1322,
+            "relative_residual": 8.990485075945886e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.51533226190469,
+        "wall_min_segment_m": 0.09099341543856297,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.012611065513795316,
+        "height_closure": 0.02126029110762917,
+        "width_closure_mm": 169.744941815685,
+        "height_closure_mm": 234.9262167393023,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.02126029110762917,
+        "signed_max_closure_mismatch": -0.0037397088923708313,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.012388934486204685,
+        "width_signed_overshoot_mm": -166.7550581843151,
+        "height_signed_margin": 0.0037397088923708313,
+        "height_signed_overshoot_mm": -41.32378326069768
+      },
+      "wall_seconds": 119.14168020000216
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.4125,
+        "residual_max": 1.2835699561528272e-10,
+        "j_min": 0.9701279432514609,
+        "yield_max": 4.800847219765814e-16,
+        "plastic_volume_max": 3.1650029819196845e-15,
+        "kappa_max": 0.029687927659386007,
+        "delta_lambda_max": 0.0017868595120394317,
+        "cumulative_plastic_area_m2": 83.6698894085026,
+        "active_plastic_area_m2": 83.6698894085026,
+        "residual_history": [
+          0.007229586475723901,
+          0.007255551487428928,
+          0.000201317231963104,
+          1.5743954889613843e-07,
+          4.122422144946314e-09,
+          1.283570075915565e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1444,
+            "relative_residual": 9.7082350828795e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1430,
+            "relative_residual": 9.350854968358417e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1526,
+            "relative_residual": 4.653083620063497e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1443,
+            "relative_residual": 5.1654999134512254e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1324,
+            "relative_residual": 6.954123951057708e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.39440441691958,
+        "wall_min_segment_m": 0.09092214457703227,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.01303900742825792,
+        "height_closure": 0.021859203468226673,
+        "width_closure_mm": 175.50503998435167,
+        "height_closure_mm": 241.54419832390474,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.021859203468226673,
+        "signed_max_closure_mismatch": -0.003140796531773328,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.011960992571742081,
+        "width_signed_overshoot_mm": -160.99496001564845,
+        "height_signed_margin": 0.003140796531773328,
+        "height_signed_overshoot_mm": -34.70580167609527
+      },
+      "wall_seconds": 95.36108630000672
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.4,
+        "residual_max": 9.800696663016212e-10,
+        "j_min": 0.9701969244706281,
+        "yield_max": 5.2562121322097255e-16,
+        "plastic_volume_max": 3.1695566310441237e-15,
+        "kappa_max": 0.03153458846813389,
+        "delta_lambda_max": 0.0018532992417073903,
+        "cumulative_plastic_area_m2": 91.29512358662556,
+        "active_plastic_area_m2": 91.29512358662556,
+        "residual_history": [
+          0.0072283448375976556,
+          0.007363136637400049,
+          0.00020913043504404866,
+          3.6457115039891325e-06,
+          2.2101064655890676e-08,
+          9.800696646277807e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1437,
+            "relative_residual": 8.747418891521119e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1637,
+            "relative_residual": 7.484379339339243e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1484,
+            "relative_residual": 9.236570696581799e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1304,
+            "relative_residual": 5.155610721109775e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1450,
+            "relative_residual": 9.571319205582566e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.26916602792227,
+        "wall_min_segment_m": 0.09084883165065508,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.013485750752565973,
+        "height_closure": 0.02247962975964879,
+        "width_closure_mm": 181.51820512953805,
+        "height_closure_mm": 248.39990884411912,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.02247962975964879,
+        "signed_max_closure_mismatch": -0.002520370240351212,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.011514249247434029,
+        "width_signed_overshoot_mm": -154.98179487046207,
+        "height_signed_margin": 0.002520370240351212,
+        "height_signed_overshoot_mm": -27.850091155880893
+      },
+      "wall_seconds": 68.0538363999949
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.3875,
+        "residual_max": 2.6471257035605745e-10,
+        "j_min": 0.9702786727391451,
+        "yield_max": 6.401129626354418e-16,
+        "plastic_volume_max": 3.557917849228431e-15,
+        "kappa_max": 0.03345047009080687,
+        "delta_lambda_max": 0.001922786092611571,
+        "cumulative_plastic_area_m2": 98.43422689172354,
+        "active_plastic_area_m2": 98.43422689172354,
+        "residual_history": [
+          0.007226921443570364,
+          0.007468293690410054,
+          0.0002647106413765467,
+          1.0212543302604641e-06,
+          1.3524574077509381e-08,
+          2.647125525017577e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1460,
+            "relative_residual": 5.631116911448416e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1421,
+            "relative_residual": 8.808589870306048e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1521,
+            "relative_residual": 4.603627639859618e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1409,
+            "relative_residual": 8.949514327088397e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1480,
+            "relative_residual": 5.877937124543472e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.13941470525255,
+        "wall_min_segment_m": 0.09077315636052206,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.0139524655031944,
+        "height_closure": 0.023121896759995875,
+        "width_closure_mm": 187.80018567299666,
+        "height_closure_mm": 255.4969591979544,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.023121896759995875,
+        "signed_max_closure_mismatch": -0.0018781032400041267,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.011047534496805601,
+        "width_signed_overshoot_mm": -148.69981432700342,
+        "height_signed_margin": 0.0018781032400041267,
+        "height_signed_overshoot_mm": -20.753040802045597
+      },
+      "wall_seconds": 128.44514539999363
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.375,
+        "residual_max": 1.5224244049112093e-10,
+        "j_min": 0.9703726231501053,
+        "yield_max": 5.48172618408671e-16,
+        "plastic_volume_max": 3.8077180297690916e-15,
+        "kappa_max": 0.035437450208398835,
+        "delta_lambda_max": 0.0019933411845400447,
+        "cumulative_plastic_area_m2": 106.34275995490248,
+        "active_plastic_area_m2": 106.34275995490248,
+        "residual_history": [
+          0.007225376671214074,
+          0.007564645678382911,
+          0.00022323744454497783,
+          4.077223380054252e-07,
+          8.234231543474575e-09,
+          1.5224244328085527e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1541,
+            "relative_residual": 8.020759393414808e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1454,
+            "relative_residual": 5.390213979900383e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1468,
+            "relative_residual": 9.724196308089562e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1531,
+            "relative_residual": 1.04092232431574e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1389,
+            "relative_residual": 9.726323343388842e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 117.00487025209479,
+        "wall_min_segment_m": 0.0906949142241085,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.014440008226273893,
+        "height_closure": 0.02378688798355766,
+        "width_closure_mm": 194.36251072564664,
+        "height_closure_mm": 262.84511221831207,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.02378688798355766,
+        "signed_max_closure_mismatch": -0.0012131120164423428,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.010559991773726109,
+        "width_signed_overshoot_mm": -142.13748927435347,
+        "height_signed_margin": 0.0012131120164423428,
+        "height_signed_overshoot_mm": -13.404887781687886
+      },
+      "wall_seconds": 125.47270199999912
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.36443810182028447,
+        "residual_max": 2.0061097305339862e-10,
+        "j_min": 0.9704622405416895,
+        "yield_max": 5.533767888366015e-16,
+        "plastic_volume_max": 3.964710504344993e-15,
+        "kappa_max": 0.03717205887080294,
+        "delta_lambda_max": 0.0017390944096569918,
+        "cumulative_plastic_area_m2": 112.14596154986269,
+        "active_plastic_area_m2": 112.14596154986269,
+        "residual_history": [
+          0.006103701340370712,
+          0.006472919404004636,
+          0.00016621691260295995,
+          8.829336476432825e-06,
+          5.935969621629236e-09,
+          2.0061098711053664e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1584,
+            "relative_residual": 7.856499553789033e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1658,
+            "relative_residual": 9.872123236329529e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1599,
+            "relative_residual": 8.297727819294597e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1365,
+            "relative_residual": 8.143855370663044e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1374,
+            "relative_residual": 3.501664459370722e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 116.88736395682683,
+        "wall_min_segment_m": 0.09062686815832459,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.014868543402675183,
+        "height_closure": 0.02436702698989568,
+        "width_closure_mm": 200.130594200008,
+        "height_closure_mm": 269.25564823834725,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.02436702698989568,
+        "signed_max_closure_mismatch": -0.0006329730101043221,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.010131456597324819,
+        "width_signed_overshoot_mm": -136.36940579999208,
+        "height_signed_margin": 0.0006329730101043221,
+        "height_signed_overshoot_mm": -6.994351761652759
+      },
+      "wall_seconds": 118.15953569998965
+    },
+    {
+      "solver": {
+        "pressure_ratio": 0.35387620364056893,
+        "residual_max": 4.3006139426352095e-10,
+        "j_min": 0.9705616172659319,
+        "yield_max": 5.041540102057596e-16,
+        "plastic_volume_max": 3.785166624581393e-15,
+        "kappa_max": 0.03895902007032145,
+        "delta_lambda_max": 0.0017918722900292301,
+        "cumulative_plastic_area_m2": 118.15585572341911,
+        "active_plastic_area_m2": 118.15585572341911,
+        "residual_history": [
+          0.00610246127459928,
+          0.0065360014157624545,
+          0.0002472955838800393,
+          3.1818808937293253e-07,
+          1.0677005163083019e-08,
+          4.300614038233089e-10
+        ],
+        "linear_solver": "bicgstab",
+        "linear_solve_history": [
+          {
+            "iterations": 1410,
+            "relative_residual": 9.842367682290256e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1572,
+            "relative_residual": 4.211182678815851e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1396,
+            "relative_residual": 6.935402617631052e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1584,
+            "relative_residual": 9.924676012011032e-11,
+            "restarts": 0
+          },
+          {
+            "iterations": 1490,
+            "relative_residual": 3.817482116401684e-11,
+            "restarts": 0
+          }
+        ],
+        "wall_self_intersections": 0,
+        "wall_polygon_area_m2": 116.76599186577926,
+        "wall_min_segment_m": 0.09055664447834343,
+        "accepted": true
+      },
+      "observation": {
+        "width_closure": 0.015313889739781983,
+        "height_closure": 0.024965412730495573,
+        "width_closure_mm": 206.12495589746553,
+        "height_closure_mm": 275.8678106719761,
+        "initial_width_m": 13.460000000000003,
+        "initial_height_m": 11.049999999999999
+      },
+      "margins": {
+        "allowable": 0.025,
+        "actual_max_closure": 0.024965412730495573,
+        "signed_max_closure_mismatch": -3.458726950442831e-05,
+        "positive_overshoot": 0.0,
+        "raw_positive_mismatch": false,
+        "controlling_chord": "height",
+        "width_signed_margin": 0.009686110260218019,
+        "width_signed_overshoot_mm": -130.37504410253456,
+        "height_signed_margin": 3.458726950442831e-05,
+        "height_signed_overshoot_mm": -0.3821893280239328
+      },
+      "wall_seconds": 109.83169639999687
+    }
+  ],
+  "change_mm": {
+    "width": -0.4353910293006038,
+    "height": -0.28338611546797665
+  }
+}

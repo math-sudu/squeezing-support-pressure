@@ -1,0 +1,1108 @@
+{
+  "targets": [
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.010384242348884687,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.8
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.011678390970322972,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.775
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.012971721617844989,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.014265400846851017,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.015561450464671722,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.016860761941812408,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.018164557323150476,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.01947470227628234,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.020798281793056095,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.022158198644279925,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.023560957470587285,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.010384242348884687,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.8
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.011678390970322972,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.775
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.012971715426982833,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.014264227314391476,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.015555957956555733,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.016848171086359942,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.018142577576663155,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.019439890573980323,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.020741101069416512,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.02204717075064211,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.02336035714457274,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.024687782717223827,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.01052829349065132,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.01140856636627996,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.012292136328736714,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.01318032445941364,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.014078270462910436,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.015001818213859375,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.015955429051610293,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.016941568305145482,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.01796304498463719,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.019023272254491075,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.020125845235891893,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.02127235727181409,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.425
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.022495497283585686,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.4
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.02380801418886125,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.375
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.010524595002211035,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.01139996124264675,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.012276992779830853,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.013156211461020084,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.014038306701919967,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.01492398876656531,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.015814853883092783,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.01671617956505478,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.01764360454500702,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.018601235453067133,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.01959124223656361,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.02061655816163388,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.425
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.021680295548450745,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.4
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.022785995531929837,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.375
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.023937885708607,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.35
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.010467781479621241,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.011511508986050134,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.012555647952401494,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.013601741213715712,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.01465048880163744,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.01570270646392613,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.016759604803769812,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.017823622986501864,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.018908287562444226,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.020027358589891575,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.021182979427026072,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.022378338766914085,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.02361682764781481,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.024902347507155587,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.425
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.010384242348884687,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.8
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.011678390970322972,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.775
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.012971715426982833,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.014264237831127402,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.015557151340149233,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.016852325354548503,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.0181505945577749,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.019452947609460813,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.020760831495954313,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.022077186031689733,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.023418115371204973,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.02480074523952358,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.01046778527629566,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.011512431629872144,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.01255912494231215,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.013608607820503327,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.014661895523745638,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.015720532400204545,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.0167904829256198,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.017890473094969606,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.019025805716882283,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.02019925597268113,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.021414097741140004,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.02267426397528427,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.023983661816279644,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.010467781479620464,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.75
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.01151150211054719,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.012554704525701843,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.013598385002695279,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.014643962780147901,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.015692040668873863,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.016743431887442428,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.017798951869986923,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.018860476579982466,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.019934068796624738,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.021038212142762358,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.022177799501539308,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.023355286885622717,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.02457399306897079,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.425
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.010525374705999457,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.7
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.011402776525804237,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.675
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.012282495225815038,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.65
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.013165225729843355,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.625
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.01405200828408848,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.6
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.014944930106785326,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.575
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.015855631986800844,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.55
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.016795597495110837,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.525
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.01776668783115587,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.5
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.018771732644099037,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.475
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.019813732547331986,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.45
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.020896047173227905,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.425
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.022022784245266602,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.4
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.02319558454408821,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.375
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.02444051929621449,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.35
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.015,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.7108300341466824
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.02,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.6150780852782067
+    },
+    {
+      "condition_id": "fit_32_015",
+      "C": 0.025,
+      "E_over_p0": 32,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.5251683574926193
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.015,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.725
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.02,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.6142386852860436
+    },
+    {
+      "condition_id": "fit_32_025",
+      "C": 0.025,
+      "E_over_p0": 32,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.5192784934777375
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.015,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.5750492181876223
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.02,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.4528534445795145
+    },
+    {
+      "condition_id": "fit_48_015",
+      "C": 0.025,
+      "E_over_p0": 48,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.3538762036405689
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.015,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.5728669264284649
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.02,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.44003337036317913
+    },
+    {
+      "condition_id": "fit_48_025",
+      "C": 0.025,
+      "E_over_p0": 48,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.3278804643050128
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.015,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.6416958436716808
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.02,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.5256111897551754
+    },
+    {
+      "condition_id": "fit_40_020",
+      "C": 0.025,
+      "E_over_p0": 40,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.4231741372275366
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.015,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.7107731750086429
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.02,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.614543177414513
+    },
+    {
+      "condition_id": "select_32_020",
+      "C": 0.025,
+      "E_over_p0": 32,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.5215090580412414
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.015,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.6420155701219925
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.02,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.5292450877592907
+    },
+    {
+      "condition_id": "select_40_015",
+      "C": 0.025,
+      "E_over_p0": 40,
+      "k_over_p0": 0.15,
+      "pressure_ratio": 0.43131732578690657
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.015,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.6415073768924537
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.02,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.5235071865078503
+    },
+    {
+      "condition_id": "select_40_025",
+      "C": 0.025,
+      "E_over_p0": 40,
+      "k_over_p0": 0.25,
+      "pressure_ratio": 0.41657146029057646
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.015,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.5734882568482856
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.02,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.44569747446326374
+    },
+    {
+      "condition_id": "select_48_020",
+      "C": 0.025,
+      "E_over_p0": 48,
+      "k_over_p0": 0.2,
+      "pressure_ratio": 0.33958678418935057
+    }
+  ],
+  "effective_settings": {
+    "grammar": {
+      "variables": [
+        "C",
+        "E_over_p0",
+        "k_over_p0"
+      ],
+      "binary_operators": [
+        "add",
+        "subtract",
+        "multiply",
+        "divide"
+      ],
+      "functions": [
+        "square",
+        "sqrt",
+        "log1p"
+      ],
+      "fixed_literals": [
+        0,
+        1
+      ],
+      "constant_names": [
+        "a0",
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5"
+      ],
+      "maximum_nodes": 24,
+      "maximum_text_length": 1024,
+      "denominator_tolerance": 1e-12,
+      "syntax": "Python arithmetic expression only. No eval, attributes, indexing, imports, arbitrary calls, exponent operator, strings or comprehensions. Fit constants appear as a0..a5."
+    },
+    "physics": {
+      "C_interval": [
+        0,
+        0.025
+      ],
+      "E_over_p0_interval": [
+        32,
+        48
+      ],
+      "k_over_p0_interval": [
+        0.15,
+        0.25
+      ],
+      "grid_shape": [
+        257,
+        9,
+        9
+      ],
+      "pressure_tolerance": 1e-08,
+      "boundary_tolerance": 1e-08,
+      "monotonic_difference_tolerance": 1e-10,
+      "continuity": "Conservative interval-domain certificate for every operation, plus sampled raw checks. Grid range/monotonicity checks are not a continuum proof; material rectangle here is a physics probe domain, not an empirically validated domain."
+    },
+    "fitting": {
+      "optimizer": "scipy.optimize.least_squares",
+      "bounds": [
+        -10,
+        10
+      ],
+      "initial_values": [
+        0.2,
+        1.0,
+        2.0
+      ],
+      "maximum_function_evaluations": 200,
+      "condition_weighting": "Equal total squared-residual weight per material condition",
+      "invalid_trial_residual": 1000000,
+      "rank_note": "Report fitted Jacobian rank separately from affine material-coordinate rank. Non-collinear materials do not ensure expression-parameter identifiability or interaction coverage."
+    }
+  }
+}

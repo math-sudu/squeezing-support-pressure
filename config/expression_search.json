@@ -1,0 +1,75 @@
+{
+  "grammar": {
+    "variables": [
+      "C",
+      "E_over_p0",
+      "k_over_p0"
+    ],
+    "binary_operators": [
+      "add",
+      "subtract",
+      "multiply",
+      "divide"
+    ],
+    "functions": [
+      "square",
+      "sqrt",
+      "log1p"
+    ],
+    "fixed_literals": [
+      0,
+      1
+    ],
+    "constant_names": [
+      "a0",
+      "a1",
+      "a2",
+      "a3",
+      "a4",
+      "a5"
+    ],
+    "maximum_nodes": 24,
+    "maximum_text_length": 1024,
+    "denominator_tolerance": 1e-12,
+    "syntax": "Python arithmetic expression only. No eval, attributes, indexing, imports, arbitrary calls, exponent operator, strings or comprehensions. Fit constants appear as a0..a5."
+  },
+  "physics": {
+    "C_interval": [
+      0,
+      0.025
+    ],
+    "E_over_p0_interval": [
+      32,
+      48
+    ],
+    "k_over_p0_interval": [
+      0.15,
+      0.25
+    ],
+    "grid_shape": [
+      257,
+      9,
+      9
+    ],
+    "pressure_tolerance": 1e-08,
+    "boundary_tolerance": 1e-08,
+    "monotonic_difference_tolerance": 1e-10,
+    "continuity": "Conservative interval-domain certificate for every operation, plus sampled raw checks. Grid range/monotonicity checks are not a continuum proof; material rectangle here is a physics probe domain, not an empirically validated domain."
+  },
+  "fitting": {
+    "optimizer": "scipy.optimize.least_squares",
+    "bounds": [
+      -10,
+      10
+    ],
+    "initial_values": [
+      0.2,
+      1.0,
+      2.0
+    ],
+    "maximum_function_evaluations": 200,
+    "condition_weighting": "Equal total squared-residual weight per material condition",
+    "invalid_trial_residual": 1000000,
+    "rank_note": "Report fitted Jacobian rank separately from affine material-coordinate rank. Non-collinear materials do not ensure expression-parameter identifiability or interaction coverage."
+  }
+}

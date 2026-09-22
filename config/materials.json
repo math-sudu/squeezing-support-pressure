@@ -1,0 +1,113 @@
+{
+  "material_conditions": [
+    {
+      "id": "fit_32_015",
+      "split": "fit",
+      "young_over_p0": 32,
+      "strength_intercept_over_p0": 0.15
+    },
+    {
+      "id": "fit_32_025",
+      "split": "fit",
+      "young_over_p0": 32,
+      "strength_intercept_over_p0": 0.25
+    },
+    {
+      "id": "fit_48_015",
+      "split": "fit",
+      "young_over_p0": 48,
+      "strength_intercept_over_p0": 0.15
+    },
+    {
+      "id": "fit_48_025",
+      "split": "fit",
+      "young_over_p0": 48,
+      "strength_intercept_over_p0": 0.25
+    },
+    {
+      "id": "fit_40_020",
+      "split": "fit",
+      "young_over_p0": 40,
+      "strength_intercept_over_p0": 0.2,
+      "reuse": "runs/first_feasibility_02"
+    },
+    {
+      "id": "select_32_020",
+      "split": "selection",
+      "young_over_p0": 32,
+      "strength_intercept_over_p0": 0.2
+    },
+    {
+      "id": "select_40_015",
+      "split": "selection",
+      "young_over_p0": 40,
+      "strength_intercept_over_p0": 0.15
+    },
+    {
+      "id": "select_40_025",
+      "split": "selection",
+      "young_over_p0": 40,
+      "strength_intercept_over_p0": 0.25
+    },
+    {
+      "id": "select_48_020",
+      "split": "selection",
+      "young_over_p0": 48,
+      "strength_intercept_over_p0": 0.2
+    },
+    {
+      "id": "blind_id_36_0175",
+      "split": "blind_interpolation",
+      "young_over_p0": 36,
+      "strength_intercept_over_p0": 0.175
+    },
+    {
+      "id": "blind_id_36_0225",
+      "split": "blind_interpolation",
+      "young_over_p0": 36,
+      "strength_intercept_over_p0": 0.225
+    },
+    {
+      "id": "blind_id_44_0175",
+      "split": "blind_interpolation",
+      "young_over_p0": 44,
+      "strength_intercept_over_p0": 0.175
+    },
+    {
+      "id": "blind_id_44_0225",
+      "split": "blind_interpolation",
+      "young_over_p0": 44,
+      "strength_intercept_over_p0": 0.225
+    },
+    {
+      "id": "blind_ood_28_020",
+      "split": "blind_extrapolation",
+      "young_over_p0": 28,
+      "strength_intercept_over_p0": 0.2
+    },
+    {
+      "id": "blind_ood_52_020",
+      "split": "blind_extrapolation",
+      "young_over_p0": 52,
+      "strength_intercept_over_p0": 0.2
+    },
+    {
+      "id": "blind_ood_40_0125",
+      "split": "blind_extrapolation",
+      "young_over_p0": 40,
+      "strength_intercept_over_p0": 0.125
+    },
+    {
+      "id": "blind_ood_40_0275",
+      "split": "blind_extrapolation",
+      "young_over_p0": 40,
+      "strength_intercept_over_p0": 0.275
+    }
+  ],
+  "reference_generation": {
+    "allowable_interval": [
+      0.01,
+      0.025
+    ]
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "geometry_id": "main_tunnel_tangent_v1",
+  "representation": "author_authorized_tangent_reconstruction",
+  "source_file": "source.dxf",
+  "source_sha256": "53a477fcda15c53d2e2bb09bce487c040edc1fd5c209e9e00ed824bf3901e557",
+  "source_arcs_file": "circular_arcs.json",
+  "source_arcs_sha256": "c6cc69a963b02089b6f58b48cd34361e2157aff15c5ab3f9a3affbffd979468b",
+  "generator": "code/geometry/repair_cad_tangency.py",
+  "generator_sha256": "fd86349a4068aa6c73ee0fff5170795da307e695de17390a31cb2015dfa95bee",
+  "author_instruction": "The author confirmed that the arcs should be tangent and authorized small adjustments to the non-tangent neighborhoods on 2026-09-05.",
+  "case_identity": "main tunnel, confirmed by the author on 2026-09-05",
+  "boundary_identity": "initial-support inner and outer outlines, confirmed by the author",
+  "confirmed_metres_per_drawing_unit": 1.0,
+  "source_unit_interpretation_note": "The author confirmed one drawing unit is one metre on 2026-09-05. The unchanged source DXF declares millimetres; that header flag must not scale these coordinates.",
+  "angle_convention": "Angles are about each circle center, measured counterclockwise from global +x. Traversal of the closed boundary is counterclockwise.",
+  "shaft_similarity_scale": null,
+  "shaft_binding_note": "The author permits use as a reference shape and similarity scaling. No initial-support width/height or survey-point mapping for shaft stations 935/915 has been established. The 7.5 by 7.5 record describes clearance, not these initial-support lines.",
+  "coordinate_origin": "Crown-circle center at (0, 0); outer invert elevation is -4.32 m. To place the outer invert at zero, translate y by +4.32 m before applying any uniform scale.",
+  "adoption_scope": "Author-authorized tangent reference for the supplied main-tunnel support section. Does not establish shaft dimensions, shaft observation locations, or replace geometry-dependent campaign results.",
+  "reconstruction": {
+    "nominal_support_thickness_m": 0.3,
+    "constraints": [
+      "Retain the crown, sidewall and invert circles to source numerical precision.",
+      "Retain the mean of the two source knee radii; enforce left-right symmetry.",
+      "Solve |K-S| = R_wall-R_knee and |K-I| = R_invert-R_knee.",
+      "Choose the knee-center intersection nearest the source knee.",
+      "Recompute junction angles from the collinear circle centers.",
+      "Construct the inner contour as the exact inward normal offset of the outer contour."
+    ],
+    "parameter_normalization": "Major-circle parameters rounded to 8 decimal places in metres; the mean knee radius to 12. This removes sub-nanometre extraction noise before the millimetre-scale repair.",
+    "right_knee_center_candidates_m": [
+      [
+        4.37562617563,
+        -1.406708375201184
+      ],
+      [
+        -9.309016444725145,
+        1.4384993076504315
+      ]
+    ],
+    "fixed_old_center_implied_knee_radii": {
+      "from_wall_tangency_m": 2.2082835492427844,
+      "from_invert_tangency_m": 2.2113326798675175
+    },
+    "diagnosis": "The source loops are closed but their circle parameters fail internal tangency. At the old knee center, wall and invert tangency require different knee radii, so changing a single knee radius alone cannot satisfy both constraints. The original drafting operation that caused this cannot be inferred from this DXF.",
+    "outer_circle_corrections": [
+      {
+        "arc_id": "crown",
+        "source_segments": [
+          "620C:0",
+          "620D:0",
+          "61DC:0",
+          "61E0:0",
+          "61E1:0",
+          "61E2:0",
+          "61E3:0",
+          "61E4:0",
+          "61E5:0",
+          "61E6:0",
+          "61E7:0",
+          "61E8:0",
+          "61E9:0",
+          "61EA:0",
+          "61EB:0",
+          "61EC:0",
+          "61ED:0",
+          "61EE:0",
+          "61EF:0",
+          "61F0:0",
+          "61F1:0",
+          "61F2:0",
+          "61F3:0"
+        ],
+        "old_center_m": [
+          4.8820503195656784e-11,
+          2.605706761471538e-10
+        ],
+        "new_center_m": [
+          0.0,
+          0.0
+        ],
+        "center_shift_m": [
+          -4.8820503195656784e-11,
+          -2.605706761471538e-10
+        ],
+        "center_shift_norm_m": 2.651047317572096e-10,
+        "radius_change_m": 3.552713678800501e-15,
+        "old_start_deg": 0.0,
+        "new_start_deg": 0.0,
+        "old_sweep_deg": 180.00000000000057,
+        "new_sweep_deg": 180.0,
+        "junction_relocation_m": 2.6508564178615863e-10
+      },
+      {
+        "arc_id": "left_wall",
+        "source_segments": [
+          "61F4:0",
+          "61F5:0"
+        ],
+        "old_center_m": [
+          2.470000000049631,
+          2.608628646926047e-10
+        ],
+        "new_center_m": [
+          2.469999999999999,
+          0.0
+        ],
+        "center_shift_m": [
+          -4.96322982712627e-11,
+          -2.608628646926047e-10
+        ],
+        "center_shift_norm_m": 2.6554246215496265e-10,
+        "radius_change_m": -8.135714324453147e-13,
+        "old_start_deg": 180.00000000000182,
+        "new_start_deg": 180.0,
+        "old_sweep_deg": 10.767997222931655,
+        "new_sweep_deg": 11.612071531208214,
+        "junction_relocation_m": 2.6510426322101535e-10
+      },
+      {
+        "arc_id": "left_knee",
+        "source_segments": [
+          "61F6:0",
+          "61F7:0",
+          "61F8:0",
+          "61F9:0"
+        ],
+        "old_center_m": [
+          -4.378967586450291,
+          -1.405610873033388
+        ],
+        "new_center_m": [
+          -4.37562617563,
+          -1.406708375201184
+        ],
+        "center_shift_m": [
+          0.0033414108202913795,
+          -0.0010975021677959163
+        ],
+        "center_shift_norm_m": 0.0035170352967061683,
+        "radius_change_m": 6.0285110237146e-12,
+        "old_start_deg": 188.14369055663158,
+        "new_start_deg": 191.61207153120822,
+        "old_sweep_deg": 63.50907925014633,
+        "new_sweep_deg": 60.15999626996661,
+        "junction_relocation_m": 0.13553203210417794
+      },
+      {
+        "arc_id": "invert",
+        "source_segments": [
+          "61FA:0",
+          "61FB:0",
+          "61FC:0",
+          "61FD:0",
+          "61FE:0",
+          "61FF:0",
+          "6200:0",
+          "6201:0",
+          "6202:0",
+          "6203:0",
+          "6204:0",
+          "6205:0"
+        ],
+        "old_center_m": [
+          5.695710569852963e-11,
+          11.8800000003113
+        ],
+        "new_center_m": [
+          0.0,
+          11.88
+        ],
+        "center_shift_m": [
+          -5.695710569852963e-11,
+          -3.112994306775363e-10
+        ],
+        "center_shift_norm_m": 3.164671348334795e-10,
+        "radius_change_m": -5.062972263658594e-11,
+        "old_start_deg": 251.74334440742524,
+        "new_start_deg": 251.7720678011748,
+        "old_sweep_deg": 36.51331118505113,
+        "new_sweep_deg": 36.45586439765035,
+        "junction_relocation_m": 0.008121348209411607
+      },
+      {
+        "arc_id": "right_knee",
+        "source_segments": [
+          "6206:0",
+          "6207:0",
+          "6208:0",
+          "6209:0"
+        ],
+        "old_center_m": [
+          4.378967586536428,
+          -1.4056108730237078
+        ],
+        "new_center_m": [
+          4.37562617563,
+          -1.406708375201184
+        ],
+        "center_shift_m": [
+          -0.003341410906427811,
+          -0.0010975021774761728
+        ],
+        "center_shift_norm_m": 0.0035170353815621,
+        "radius_change_m": -6.960210185980031e-12,
+        "old_start_deg": 288.34723019272883,
+        "new_start_deg": 288.22793219882516,
+        "old_sweep_deg": 63.50907925039142,
+        "new_sweep_deg": 60.15999626996661,
+        "junction_relocation_m": 0.008121348274809101
+      },
+      {
+        "arc_id": "right_wall",
+        "source_segments": [
+          "620A:0",
+          "620B:0"
+        ],
+        "old_center_m": [
+          -2.4699999999521784,
+          2.608211424615092e-10
+        ],
+        "new_center_m": [
+          -2.469999999999999,
+          0.0
+        ],
+        "center_shift_m": [
+          -4.782041429507444e-11,
+          -2.608211424615092e-10
+        ],
+        "center_shift_norm_m": 2.651687394439236e-10,
+        "radius_change_m": -9.876544027065393e-13,
+        "old_start_deg": 349.2320027770571,
+        "new_start_deg": 348.3879284687918,
+        "old_sweep_deg": 10.767997222940464,
+        "new_sweep_deg": 11.612071531208214,
+        "junction_relocation_m": 0.1355320321215452
+      }
+    ],
+    "inner_reconstruction": "Replace the asymmetric extra left arc and the source inner knee joins with the exact constant-thickness offset of the repaired outer profile. All six corresponding inner/outer arcs share centers and angle intervals; inner radii are 0.30 m smaller."
+  },
+  "validation": {
+    "source_deviation": [
+      {
+        "role": "initial_support_inner",
+        "source_to_repaired": {
+          "sample_count": 400000,
+          "lower_bound_m": 0.0034451197097613573,
+          "upper_bound_m": 0.0034925474890898952,
+          "near_maximum_point_m": [
+            -6.27061381974641,
+            -1.6949941161377642
+          ]
+        },
+        "repaired_to_source": {
+          "sample_count": 400000,
+          "lower_bound_m": 0.003445119640261396,
+          "upper_bound_m": 0.003492542745732959,
+          "near_maximum_point_m": [
+            -6.2672274291424035,
+            -1.6943603074439662
+          ]
+        },
+        "hausdorff_lower_bound_m": 0.0034451197097613573,
+        "hausdorff_upper_bound_m": 0.0034925474890898952,
+        "area_change_m2": -0.007849975218064742,
+        "perimeter_change_m": -0.003739085580221513
+      },
+      {
+        "role": "initial_support_outer",
+        "source_to_repaired": {
+          "sample_count": 400000,
+          "lower_bound_m": 0.003052330220652877,
+          "upper_bound_m": 0.003102114136255652,
+          "near_maximum_point_m": [
+            6.545157651643252,
+            -1.850163427591722
+          ]
+        },
+        "repaired_to_source": {
+          "sample_count": 400000,
+          "lower_bound_m": 0.0030523302328711033,
+          "upper_bound_m": 0.0031021095328328586,
+          "near_maximum_point_m": [
+            6.542167042922369,
+            -1.8495527001045151
+          ]
+        },
+        "hausdorff_lower_bound_m": 0.0030523302328711033,
+        "hausdorff_upper_bound_m": 0.003102114136255652,
+        "area_change_m2": -0.008376584692030065,
+        "perimeter_change_m": -0.0036925128159595033
+      }
+    ],
+    "distance_bound_method": "Analytic point-to-finite-arc distances, sampled uniformly in arc length in both directions. Each directed upper bound adds half the sample spacing by the 1-Lipschitz property of distance; reported brackets include sampling uncertainty.",
+    "max_normal_thickness_error_m": 7.216449660063518e-16,
+    "parallel_curve_perimeter_residual_m": -7.105427357601002e-15,
+    "parallel_curve_area_residual_m2": 0.0,
+    "simple_convex_closed_curve": true,
+    "convexity_basis": "Closed C1 curve, positive circular curvature, positive arc sweeps, total tangent rotation 2*pi.",
+    "tangent_continuity": "G1, or C1 under arc-length parametrization; curvature is piecewise constant, not C2.",
+    "dxf_roundtrip": {
+      "file": "tangent_section.dxf",
+      "sha256": "cbddcc41e1973c3f5ad8e5d424b439be9bf38eb1e57cc578d159b3f193e35c15",
+      "dxf_insunits_code": 6,
+      "max_circle_parameter_roundtrip_error_m": 1.0658141036401503e-14,
+      "content": "Two closed six-arc support polylines only, in metres; excludes the source numerical-domain grid."
+    }
+  },
+  "boundaries": [
+    {
+      "role": "initial_support_inner",
+      "coordinate_units": "m; one drawing unit is one metre, confirmed by the author",
+      "bounds_min": [
+        -6.430000000000001,
+        -4.019999999999998
+      ],
+      "bounds_max": [
+        6.430000000000001,
+        6.430000000000001
+      ],
+      "width": 12.860000000000001,
+      "height": 10.45,
+      "area": 109.80496344039511,
+      "perimeter": 37.93848437725027,
+      "max_endpoint_gap": 3.4684476073050936e-15,
+      "max_tangent_jump_deg": 0.0,
+      "non_tangent_joints": [],
+      "circular_arcs": [
+        {
+          "arc_id": "crown",
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 6.430000000000001,
+          "start_rad": 0.0,
+          "sweep_rad": 3.141592653589793,
+          "start_deg": 0.0,
+          "end_deg": 180.0,
+          "sweep_deg": 180.0
+        },
+        {
+          "arc_id": "left_wall",
+          "center": [
+            2.469999999999999,
+            0.0
+          ],
+          "radius": 8.899999999999999,
+          "start_rad": 3.141592653589793,
+          "sweep_rad": 0.2026688811966828,
+          "start_deg": 180.0,
+          "end_deg": 191.61207153120822,
+          "sweep_deg": 11.612071531208214
+        },
+        {
+          "arc_id": "left_knee",
+          "center": [
+            -4.37562617563,
+            -1.406708375201184
+          ],
+          "radius": 1.9113358794879998,
+          "start_rad": 3.344261534786476,
+          "sweep_rad": 1.0499900128984248,
+          "start_deg": 191.61207153120822,
+          "end_deg": 251.7720678011748,
+          "sweep_deg": 60.15999626996661
+        },
+        {
+          "arc_id": "invert",
+          "center": [
+            0.0,
+            11.88
+          ],
+          "radius": 15.899999999999999,
+          "start_rad": 4.394251547684901,
+          "sweep_rad": 0.636274865399578,
+          "start_deg": 251.7720678011748,
+          "end_deg": 288.22793219882516,
+          "sweep_deg": 36.45586439765035
+        },
+        {
+          "arc_id": "right_knee",
+          "center": [
+            4.37562617563,
+            -1.406708375201184
+          ],
+          "radius": 1.9113358794879998,
+          "start_rad": 5.030526413084479,
+          "sweep_rad": 1.0499900128984248,
+          "start_deg": 288.22793219882516,
+          "end_deg": 348.3879284687918,
+          "sweep_deg": 60.15999626996661
+        },
+        {
+          "arc_id": "right_wall",
+          "center": [
+            -2.469999999999999,
+            0.0
+          ],
+          "radius": 8.899999999999999,
+          "start_rad": 6.080516425982903,
+          "sweep_rad": 0.2026688811966828,
+          "start_deg": 348.3879284687918,
+          "end_deg": 360.0,
+          "sweep_deg": 11.612071531208214
+        }
+      ]
+    },
+    {
+      "role": "initial_support_outer",
+      "coordinate_units": "m; one drawing unit is one metre, confirmed by the author",
+      "bounds_min": [
+        -6.73,
+        -4.3199999999999985
+      ],
+      "bounds_max": [
+        6.73,
+        6.73
+      ],
+      "width": 13.46,
+      "height": 11.049999999999999,
+      "area": 121.46925209239328,
+      "perimeter": 39.82343996940415,
+      "max_endpoint_gap": 3.2023728339893768e-15,
+      "max_tangent_jump_deg": 0.0,
+      "non_tangent_joints": [],
+      "circular_arcs": [
+        {
+          "arc_id": "crown",
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 6.73,
+          "start_rad": 0.0,
+          "sweep_rad": 3.141592653589793,
+          "start_deg": 0.0,
+          "end_deg": 180.0,
+          "sweep_deg": 180.0
+        },
+        {
+          "arc_id": "left_wall",
+          "center": [
+            2.469999999999999,
+            0.0
+          ],
+          "radius": 9.2,
+          "start_rad": 3.141592653589793,
+          "sweep_rad": 0.2026688811966828,
+          "start_deg": 180.0,
+          "end_deg": 191.61207153120822,
+          "sweep_deg": 11.612071531208214
+        },
+        {
+          "arc_id": "left_knee",
+          "center": [
+            -4.37562617563,
+            -1.406708375201184
+          ],
+          "radius": 2.211335879488,
+          "start_rad": 3.344261534786476,
+          "sweep_rad": 1.0499900128984248,
+          "start_deg": 191.61207153120822,
+          "end_deg": 251.7720678011748,
+          "sweep_deg": 60.15999626996661
+        },
+        {
+          "arc_id": "invert",
+          "center": [
+            0.0,
+            11.88
+          ],
+          "radius": 16.2,
+          "start_rad": 4.394251547684901,
+          "sweep_rad": 0.636274865399578,
+          "start_deg": 251.7720678011748,
+          "end_deg": 288.22793219882516,
+          "sweep_deg": 36.45586439765035
+        },
+        {
+          "arc_id": "right_knee",
+          "center": [
+            4.37562617563,
+            -1.406708375201184
+          ],
+          "radius": 2.211335879488,
+          "start_rad": 5.030526413084479,
+          "sweep_rad": 1.0499900128984248,
+          "start_deg": 288.22793219882516,
+          "end_deg": 348.3879284687918,
+          "sweep_deg": 60.15999626996661
+        },
+        {
+          "arc_id": "right_wall",
+          "center": [
+            -2.469999999999999,
+            0.0
+          ],
+          "radius": 9.2,
+          "start_rad": 6.080516425982903,
+          "sweep_rad": 0.2026688811966828,
+          "start_deg": 348.3879284687918,
+          "end_deg": 360.0,
+          "sweep_deg": 11.612071531208214
+        }
+      ]
+    }
+  ]
+}

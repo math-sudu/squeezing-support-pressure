@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "device": "cuda:0",
+  "dtype": "float64",
+  "geometry": "config/tangent_arcs.json",
+  "p0": 1.0,
+  "stress_units": "p0 (synthetic verification); coordinates and displacement in metres",
+  "material": {
+    "young": 40.0,
+    "poisson": 0.25,
+    "alpha": 0.8,
+    "beta": 0.2,
+    "k0": 0.2,
+    "hardening": 1.0
+  },
+  "outer_widths": 8.0,
+  "reference_mesh": {
+    "angular": 192,
+    "radial": 48,
+    "quadrature": 4,
+    "degree": 2
+  },
+  "reference": {
+    "newton_tolerance": 1e-09,
+    "newton_iterations": 18,
+    "tangent_difference": 2e-06,
+    "linear_solver": "bicgstab"
+  }
+}
