@@ -3,6 +3,8 @@
 This supplement accompanies **Explicit support-pressure design for horseshoe
 tunnels under paired convergence constraints**, by Pengcheng Zhu and Tielin Chen.
 
+[Download the data and code archive](https://github.com/math-sudu/squeezing-support-pressure/raw/refs/heads/main/Support_Pressure_Data_Code.zip).
+
 The archive contains the numerical inputs, pressure relations, source code and
 tabulated observations used to check the reported pressure-design and directional
 plastic-moment results. It includes the recorded expression proposals and their
